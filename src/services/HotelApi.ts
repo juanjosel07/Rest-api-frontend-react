@@ -19,7 +19,6 @@ export async function createHotel(formData: HotelFormData) {
 }
 export async function getHotels() {
 	try {
-		console.log('hola')
 		const {
 			data: { hotels: data }
 		} = await api('/hotels')
