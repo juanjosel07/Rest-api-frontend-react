@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Frontend - Sistema de Gestión de Hoteles
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el frontend de un sistema de gestión de hoteles desarrollado en **React** con **TypeScript** y **TailwindCSS**. Este Frontend permite la interacción con las api de laravel para manejar toda la gestión de los hoteles. Usa React con typescript, zod, Axios,react router,react query y tailwind para los estilos.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- **React** - Biblioteca JavaScript para la construcción de interfaces de usuario.
+- **TypeScript** - Superset de JavaScript que agrega tipado estático.
+- **React Router** - Enrutador para manejar las rutas de la aplicación.
+- **Axios** - Cliente HTTP para realizar solicitudes a la API.
+- **Tailwind CSS** - Framework de CSS para diseñar la interfaz de usuario de manera eficiente.
+- **React Query** - Para la gestión de estado y solicitudes a la API.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Requisitos
 
-- Configure the top-level `parserOptions` property like this:
+Antes de comenzar, asegúrate de tener instalados los siguientes programas:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) o [Yarn](https://yarnpkg.com/)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Instalación
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Sigue estos pasos para instalar y configurar el proyecto en tu máquina local:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 1. Clonar el repositorio
+
+git@github.com:juanjosel07/Rest-api-frontend-react.git
+
+### 2. instalar dependencias
+
+npm install
+
+### 3. Configurar las variables de entorno
+
+### 4. Levantar el servidor
+
+npm run dev
+
+
