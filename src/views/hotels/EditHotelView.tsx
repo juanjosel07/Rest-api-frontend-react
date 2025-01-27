@@ -1,7 +1,7 @@
 import { Navigate, useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { getHotelsById } from '@/services/HotelApi'
-import EditHotelForm from '@/components/hotels/editHotelForm'
+import EditHotelForm from '@/components/hotels/EditHotelForm'
 
 export default function EditHotelView() {
 	const params = useParams()
